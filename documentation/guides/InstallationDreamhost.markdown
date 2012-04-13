@@ -32,17 +32,15 @@ Variables:
 		chmod 775 OpenPhotoRoot/src/html/photos
 		
 		mkdir OpenPhotoRoot/src/userdata
-		chmod 775 OpenPhotoRoot/src/userdata_
+		chmod 775 OpenPhotoRoot/src/userdata
 	
 1. Configure the subdomain or domain.
-Go to the [Dreamhost control panel for managing domains](https://panel.dreamhost.com/index.cgi?tree=domain.manage)
+Go to the [Dreamhost control panel for managing domains](https://panel.dreamhost.com/index.cgi?tree=domain.manage).  Settings:
 
-	Domain settings:
-
-	- Select the *Fully Hosted* portion of the configuration panel.
-	- *Do you want the www in your URL?* Select "Leave it alone"
-	- *Web directory:* Set to *OpenPhotoRoot*/src/html
-	- *PHP mode:* Select the latest version of PHP (use FastCGI configuration)
+	- Select the *Fully Hosted* portion of the configuration panel:
+		- *Do you want the www in your URL?* Select "Leave it alone"
+		- *Web directory:* Set to *OpenPhotoRoot*/src/html
+		- *PHP mode:* Select the latest version of PHP (use FastCGI configuration)
 
 1. Go to the [Dreamhost control panel for managing databases](https://panel.dreamhost.com/index.cgi?tree=goodies.mysql)
 and create a new database and a new user for the database.  Remember the hostname (the default should be fine), database name, user name, and password, since you'll need this information during the setup.
@@ -53,6 +51,15 @@ and create a new database and a new user for the database.  Remember the hostnam
 	- *Select File System:* Local filesystem
 	- *Enter your local file system credentials:* /home/USERNAME/OpenPhotoRoot/src/html/photos
 	- *File system hostname for download URL (Web accessible w/o "http://"):* YOURDOMAIN.com/photos
+
+
+### Launching your OpenPhoto site
+
+Now you're ready to launch your OpenPhoto site. Point your browser to your host and you'll be taken to a setup screen.
+
+Once you complete the three steps your site will be up and running.
+
+**ENJOY!**
 
 
 ### Troubleshooting
@@ -66,12 +73,4 @@ If the setup page is not colorful and well formatted, then the css and javascrip
 #### Error setting up the database
 Double check all the parameters.  Open the Dreamhost control panel for databases.
 
-	
-### Launching your OpenPhoto site
-
-Now you're ready to launch your OpenPhoto site. Point your browser to your host and you'll be taken to a setup screen.
-
-Once you complete the three steps your site will be up and running.
-
-**ENJOY!**
 
